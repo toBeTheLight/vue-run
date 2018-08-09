@@ -1,0 +1,23 @@
+{
+  "name": "vue-run",
+  "version": "1.0.0",
+  "description": "Vue 各个 API 运行时机的总结",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev read"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toBeTheLight/vue-run.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toBeTheLight/vue-run/issues"
+  },
+  "homepage": "https://github.com/toBeTheLight/vue-run#readme",
+  "dependencies": {
+    "vuepress": "^0.14.1"
+  }
+}
