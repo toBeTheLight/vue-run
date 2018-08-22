@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dome:dev": "webpack-dev-server --config ./demo/build/webpack.dev.js",
+    "demo:dev": "webpack-dev-server --config ./demo/build/webpack.dev.js",
     "demo:build": "node build/build.js",
     "docs:dev": "vuepress dev read"
   },
