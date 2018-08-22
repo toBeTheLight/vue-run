@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "demo:dev": "webpack-dev-server --config ./demo/build/webpack.dev.js",
     "demo:build": "node build/build.js",
-    "docs:dev": "vuepress dev read"
+    "docs:dev": "vuepress dev read",
+    "dev": "concurrently \"npm run docs:dev\" \"npm run demo:dev\""
   },
   "repository": {
     "type": "git",
@@ -60,9 +61,10 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
-    "vuepress": "^0.14.1",
+    "concurrently": "^3.6.1",
     "reset.css": "^2.0.2",
     "vue": "^2.5.16",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuepress": "^0.14.1"
   }
 }
