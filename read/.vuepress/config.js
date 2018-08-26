@@ -4,7 +4,11 @@ module.exports = {
   themeConfig: {
     nav: [
       {
-        text: '运行流程',
+        text: '诞生',
+        link: '/birth/'
+      },
+      {
+        text: '实例化',
         link: '/run/'
       },
       {
@@ -17,9 +21,14 @@ module.exports = {
       },
     ],
     sidebar: {
+      '/birth/': [
+        {
+          title: '构造函数的诞生'
+        }
+      ],
       '/run/': [
         {
-          title: '执行流程',
+          title: '实例化',
           children: [
             ''
           ]
