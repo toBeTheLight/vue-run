@@ -9,4 +9,4 @@ new Vue({
   render: h => h(App)
 })
 ```
-以上方初始化方式为例，`new Vue(options)` 会将配置作为参数调用 Vue **原型链**的 _init 方法`this._init(options)`
+以上方初始化方式为例，`new Vue(options)` 会将传入配置作为参数调用 Vue **原型链**的 _init 方法`this._init(options)`

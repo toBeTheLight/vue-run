@@ -23,7 +23,11 @@ module.exports = {
     sidebar: {
       '/birth/': [
         {
-          title: '构造函数的诞生'
+          title: '构造函数的诞生',
+          children: [
+            '',
+            'base'
+          ]
         }
       ],
       '/run/': [
