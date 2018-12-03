@@ -26,7 +26,8 @@ module.exports = {
           title: '构造函数的诞生',
           children: [
             '',
-            'base'
+            'base',
+            'features'
           ]
         }
       ],

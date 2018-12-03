@@ -1,4 +1,4 @@
-# 打基础
+# 打下基础
 
 我们在 `/core/instance/index.js` 文件中可以看到最初的函数声明和 5 个对 Vue 的处理函数
 
@@ -21,7 +21,7 @@ renderMixin(Vue)
 export default Vue
 ```
 
-由五个函数名称中共同的部分 **Mixin** 可以看出，当前文件是对 Vue（及其原型）做了 API 添加的操作，而被添加上的部分正是 Vue 运行的基础。
+由五个函数名称中共同的部分 **Mixin** 可以看出，当前文件是对 Vue（其原型）做了 API 添加的操作，而被添加上的部分正是 Vue 运行的基础。
 
 ## initMixin
 
@@ -100,3 +100,32 @@ Vue.prototype._render = function () { xx }
 * installRenderHelpers：向 Vue 原型添加 render 所需的工具函数。
 * $nextTick：在下次 DOM 渲染更新循环之后执行传入的函数。
 * _render：其实是将实例编译为 vnode，用于渲染，后续渲染通过 [_update](#lifecyclemixin)方法实现。
+
+## 结束
+
+那么在 /core/instance/index.js 文件中对 Vue 的处理我们就粗略的看完了。至此 Vue 的原型变为了
+
+```js
+{
+  _init: f(),
+  $data: (...)
+  get $data: f()
+  set $data: f()
+  $props: (...)
+  get $props: f()
+  set $props: f()
+  $set: f()
+  $delete: f()
+  $watch: f()
+  $on: f()
+  $once: f()
+  $off: f()
+  $emit: f()
+  _update: f()
+  $forceUpdate: f()
+  $destroy: f()
+  //.. 省略一些 render 工具 api
+  $nextTick: f()
+  _render: f()
+}
+```
