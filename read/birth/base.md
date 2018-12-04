@@ -101,13 +101,13 @@ Vue.prototype._render = function () { xx }
 * $nextTick：在下次 DOM 渲染更新循环之后执行传入的函数。
 * _render：其实是将实例编译为 vnode，用于渲染，后续渲染通过 [_update](#lifecyclemixin)方法实现。
 
-## 结束
+## 变化
 
 那么在 /core/instance/index.js 文件中对 Vue 的处理我们就粗略的看完了。至此 Vue 的原型变为了
 
 ```js
 {
-  _init: f(),
+  _init: f()
   $data: (...)
   get $data: f()
   set $data: f()
