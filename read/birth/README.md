@@ -6,6 +6,7 @@
 
 1. /src/core/instance/index.js
 2. /src/core/index.js
+3. /src/platforms/web/runtime/index.js
 3. /src/platforms/web/entry-runtime-with-compiler.js
 
 我们按照顺序看下每个文件内都发生了什么。

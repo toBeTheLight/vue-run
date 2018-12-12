@@ -27,7 +27,9 @@ module.exports = {
           children: [
             '',
             'base',
-            'features'
+            'features',
+            'platform',
+            'usage'
           ]
         }
       ],

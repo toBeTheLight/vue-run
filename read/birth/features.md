@@ -1,6 +1,6 @@
 # 扩充功能
 
-单纯看 /src/core/index.js 的话，内容很简单，大部分的添加集中在 initGlobalAPI 中。虽然仍然有对 Vue 原型的操作，但是大部分方法和属性还是直接添加到了 Vue 函数本身上的。
+单纯看 `/src/core/index.js` 的话，内容很简单，大部分的添加集中在 initGlobalAPI 中。虽然仍然有对 Vue 原型的操作，但是大部分方法和属性还是直接添加到了 Vue 函数本身上的。
 
 先跳过 initGlobalAPI。
 
